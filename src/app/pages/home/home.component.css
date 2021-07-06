@@ -1,0 +1,29 @@
+* {
+    font-family: 'Montserrat-Regular';
+}
+.header-bg-img {
+    background: url(src/assets/images/pattern.svg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #F8F7FF
+}
+.header {
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.header p {
+    overflow-wrap: break-word;
+}
+
+.header .header-heading {
+    font-size: 50px;
+    color: #5E56E7;
+}
+
+.content-background {
+    background: #F8F7FF;
+    height: calc(100% - 185px);
+}

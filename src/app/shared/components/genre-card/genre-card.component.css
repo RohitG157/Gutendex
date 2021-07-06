@@ -1,0 +1,41 @@
+.genre {
+    border-radius: 4px;
+    padding: 10px;
+    height: 50px;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    float: left;
+    margin-top: 25px;
+    margin-right: 60px;       
+}
+.genre-info {
+    float: left;
+}
+
+.genre-img {
+    display: inline-block;
+}
+
+.genre-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.genre-text {
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+}
+
+.genre-action {
+    float: right;
+    color: #5E56E7;
+}
+
+@media (max-width: 576px) { 
+    .genre {
+        width: 100%;
+    }
+}

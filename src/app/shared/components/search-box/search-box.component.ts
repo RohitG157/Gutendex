@@ -17,11 +17,11 @@ export class SearchBoxComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.form.form.valueChanges.pipe(debounceTime(750)).subscribe(data => {
+        this.form.form.valueChanges.pipe(debounceTime(750)).subscribe((data) => {
             if (this.form.form.dirty) {
                 this.onTypeCompleted.emit(data);
             }
-        })
+        });
     }
 
     resetSearchBox() {

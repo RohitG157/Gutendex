@@ -7,7 +7,7 @@ import { SharedModule } from "src/app/shared/shared.module";
 const routes: Routes = [{
     path: ':genre',
     component: GenreComponent
-}]
+}];
 
 @NgModule({
     declarations: [

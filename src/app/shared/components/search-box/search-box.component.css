@@ -1,0 +1,36 @@
+.input-container { 
+    position:relative;
+    padding:0;
+    margin:0;
+}
+.search-box { 
+    margin:0;
+    padding-left:35px;
+    background: #F0F0F6;
+    border-color: #F0F0F6;
+    height: 40px;
+    font-size: 16px;
+}
+
+.search-box:focus {
+    box-shadow: none;
+    border-color: #5E56E7;
+    caret-color: #5E56E7;
+}
+
+.search-icon {
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.cancel-icon {
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}

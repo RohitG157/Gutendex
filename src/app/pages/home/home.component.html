@@ -1,0 +1,21 @@
+<div class="header-bg-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="header">
+                    <p class="header-heading">Gutenberg Project</p>
+                    <p>A social cataloging website that allows you to freely search its database of books, annotations, and reviews.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <app-genre-card *ngFor="let genre of genres;" [genreName]="genre.name" [genreImg]="genre.img" (click)="onSelectGenre(genre)"></app-genre-card>          
+            </div>
+        </div>
+    </div>
+</div>

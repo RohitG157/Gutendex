@@ -28,5 +28,19 @@ export const SYSTEM_CONSTANTS = {
             name: "Politics",
             img: "assets/images/Politics.svg"
         }
+    ],
+    FORMATS: [
+        {
+            key: "htm",
+            value: "text/html"
+        },
+        {
+            key: "pdf",
+            value: "application/pdf"
+        },
+        {
+            key: "txt",
+            value: "text/plain"
+        }
     ]
 }

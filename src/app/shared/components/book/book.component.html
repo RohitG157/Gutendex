@@ -1,0 +1,19 @@
+<div class="container">
+    <div 
+        class="row"
+        infiniteScroll 
+        [infiniteScrollDistance]="1"
+        [infiniteScrollThrottle]="150"
+        [infiniteScrollDisabled]="scrollDisabled"
+        (scrolled)="onScroll()">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 book-info" *ngFor="let book of books; trackBy: trackBook" (click)="openBook(book.formats)">
+            <div class="book-info__img">
+                <img [src]="book.formats['image/jpeg']" >
+            </div>
+            <div class="book-info__desc">
+                <label class="book-info__desc__name">{{book.title}}</label>
+                <label class="book-info__desc__author" *ngFor="let author of book.authors">{{author.name | authorName}}</label>
+            </div>
+        </div>
+    </div>
+</div>

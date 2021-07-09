@@ -1,0 +1,39 @@
+.book-info {
+    margin-top: 30px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.book-info__img img {
+    width: 114px;
+    height: 162px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+}
+
+.book-info__desc {
+    width: 114px;
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+.book-info__desc__name {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    color: #333333;
+}
+
+.book-info__desc__author {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    color: #A0A0A0;
+}

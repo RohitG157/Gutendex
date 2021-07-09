@@ -1,0 +1,32 @@
+.header-genre {
+    padding-top: 50px;
+    font-family: 'Montserrat-SemiBold';
+}
+.header {
+    vertical-align: middle;
+}
+.header-back {
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+}
+
+.header-back img {
+    cursor: pointer;
+}
+
+.header-title {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.header-title p {
+    font-size: 30px;
+    color: #5E56E7;
+}
+
+.content-background {
+    margin-top: 30px;
+    background: #F8F7FF;
+}

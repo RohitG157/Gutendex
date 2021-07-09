@@ -1,0 +1,13 @@
+<form class="input-container" #form="ngForm">
+    <input 
+        type="text" 
+        class="form-control search-box" 
+        name="search"
+        [placeholder]="placeholder"
+        (focus)="placeholder=''"
+        (blur)="placeholder='Search'"
+        ngModel
+        #search>
+    <img src="assets/images/Search.svg" class="search-icon">
+    <img *ngIf="search.value" (click)="resetSearchBox()" src="assets/images/Cancel.svg" class="cancel-icon">
+</form>

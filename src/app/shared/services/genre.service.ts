@@ -23,9 +23,9 @@ export class GenreService {
             params.push({
                 key: 'mime_type',
                 value: "image/jpeg"
-            })
+            });
             let queryParams = [];
-            params.forEach(param => {
+            params.forEach((param) => {
                 queryParams.push(this.push(param.key, param.value));
             })
             url += "?" + queryParams.join('&');

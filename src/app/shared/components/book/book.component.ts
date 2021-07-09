@@ -37,14 +37,14 @@ export class BookComponent implements OnInit {
         let availableFormats = Object.keys(fileLinks);
         let result: Array<{key: string, value: Array<any>}> = [];
         
-        this.allowedFormats.some(format => {
+        this.allowedFormats.some((format) => {
             result.push({
                 key: format.key,
-                value: availableFormats.filter(f => f.includes(format.value))
-            })
+                value: availableFormats.filter((f) => f.includes(format.value))
+            });
         })
         
-        result.some(element => {
+        result.some((element) => {
             if (element.value.length) {
                 selectedFileType = element.key;
                 selectedFile = fileLinks[element.value[0]];

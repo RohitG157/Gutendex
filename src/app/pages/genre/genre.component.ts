@@ -28,7 +28,7 @@ export class GenreComponent implements OnInit {
                 value: this.genre
             }];
             this.getBooks(queryParams);
-        })
+        });
     }
 
     ngOnInit() {

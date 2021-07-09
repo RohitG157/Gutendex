@@ -9,12 +9,12 @@ export class CommonService {
     constructor() { 
     }
     
-    getFileExtension(fileName: string): string {
+    public getFileExtension(fileName: string): string {
         let extensionRegex = /(?:\.([^.]+))?$/;
         return extensionRegex.exec(fileName)[1];
     }
 
-    generateFileName(filePath: string, format: string): string {
+    public generateFileName(filePath: string, format: string): string {
         let fileNameIndex = filePath.lastIndexOf("/");
         let fileName = filePath.substring(fileNameIndex + 1);
         let extension = this.getFileExtension(fileName);
